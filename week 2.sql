@@ -1,0 +1,11 @@
+create database sqlrevision;
+use sqlrevision;
+select * from videogames_sales;
+select * from website_stats;
+select * from web;
+select * from playstore;
+select * from titanic_ds;
+select * from youtube_11;
+select * from employee_details;
+select * from department_details;
+select * from admission_predict;
