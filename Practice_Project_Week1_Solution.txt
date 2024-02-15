@@ -1,0 +1,77 @@
+Create table city (
+	Person_id INT (11) UNSIGNED NOT NULL,
+	city_name VARCHAR(20),
+	Locality VARCHAR(25) NOT NULL,
+	Country VARCHAR(20) NOT NULL);
+
+show tables; 
+/* or use:  describe city;*/
+
+INSERT INTO city
+VALUES (
+	1,
+	'Raipur',
+	'Shankar Nagar',
+	'India'
+	);
+    
+INSERT INTO city
+VALUES (
+	2,
+	'Raipur',
+	'Sales tax',
+	'India'
+	);    
+
+INSERT INTO city
+VALUES (
+	3,
+	'Bilaspur',
+	'Nehru Nagar',
+	'India'
+	);  
+    
+    INSERT INTO city
+VALUES (
+	4,
+	'Bilaspur',
+	'Civil lines',
+	'India'
+	);  
+    
+  ALTER TABLE city ADD COLUMN contact INT(10) ;
+  
+  RENAME COLUMN city_name  TO District ;
+  
+  DROP TABLE city;
+  
+  DESCRIBE city;
+  
+  UPDATE city 
+  SET Locality = 'Warehouse Road'
+  WHERE person_id = 4;
+
+
+//FOr problems on HR-emp//
+
+use hr_emp;
+
+decribe employees;
+
+select* from employees;
+
+select employee_id, first name, last_name, hire_date
+from employees
+where department_id = 38;
+
+select phone_number, job_id, salary
+from employees
+where first_name = "Gopi"
+and last_name = "Kumar"
+
+
+
+
+
+
+
